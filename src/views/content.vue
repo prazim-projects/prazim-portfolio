@@ -62,7 +62,7 @@ onMounted(() => startRotation(2000)) // 2s interval
 </div>
 <h2 class="slide-title" id="projects"> Projects </h2>
 <Projects />
-<h2 id="about">My Career and Hobbies so far</h2>
+<h2 id="about">Career, Achievements, & Hobbies</h2>
 <About />
 </template>
 

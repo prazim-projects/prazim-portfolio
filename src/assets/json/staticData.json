@@ -26,8 +26,9 @@
     "projects" : {
       "proj" :  [   
         {   "title": "Affiliate marketing web app", "stack": "DRF API", "image": "/svgs/drf.png", "description": "REST APIs and Django templates", "url": "https://github.com/prazim-projects/affiliate-marketing-website" },
-        {   "title": "Vue3 Portfolio site", "stack": "Vue3, TailwindCSS",  "image": "/svgs/vue.svg", "description": "Elegant UI with Vue3&Tailwindcss", "url": "https://github.com/prasimbaal/vue-portfolio" },
-        {   "title": "Exam Bank", "stack": "Nuxt 4, Django, GraphQL", "image": "/svgs/web_hacking_2024.png", "description": "Role based Auth for an Exam archive", "url": "https://github.com/prazim-projects/exam-bank" }
+        {   "title": "ASTU Guest Route Planning Guide\na Software Architecture Case Study", "stack": "Software Architecture and Requirements Engineering", "image": "/svgs/req_eng.jpg", "description": "Software Architecture and Requirements Engineering", "url": "https://www.scribd.com/document/812996900/Project-proposal" },
+        {   "title": "This Portfolio site", "stack": "Vue3, TailwindCSS",  "image": "/svgs/vue.svg", "description": "Portfolio website made with Vue3&Tailwindcss", "url": "https://github.com/prazim-projects/prazim-portfolio" },
+        {   "title": "Exam Bank", "stack": "Nuxt 4, Django, GraphQL", "image": "/svgs/web_hacking_2024.png", "description": "Role based Auth system for an Exam archive", "url": "https://github.com/prazim-projects/exam-bank" }
         ] 
     },
 
@@ -45,8 +46,9 @@
         { "title": "Internship", "text": "Created a digital exam archive system for the Ethiopian Defense university.(Confidential!) 🇪🇹", "year": "2025", "img": "/svgs/project.jpg" }
       ],
       "misc": [
-        { "title": "Travelling Hobby", "text": "I Explore Ethiopia and neighboring countries, combining travel with tech meetups and cultural experiences.", "year": "Ongoing", "img": "/svgs/travel.jpg" },
-        { "title": "Future", "text": "Aiming to pursue a master’s in Cybersecurity and work internationally.", "year": "2026+" }
+        { "title": "Travelling Hobby", "text": "I Explore Ethiopia, and live with nature , combining travel with tech meetups and cultural experiences.", "year": "Ongoing", "img": "/svgs/travel.jpg" },
+        { "title": "Music", "text": "Making playlists is core, to my other endevours.", "year": "♾️", "img": "" },
+        { "title": "Future", "text": "Plan on pursuing a master’s in Cybersecurity and work internationally.", "year": "2026+" }
       ]
     }
     
