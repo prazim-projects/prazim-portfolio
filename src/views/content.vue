@@ -89,7 +89,7 @@ onMounted(() => startRotation(2000)) // 2s interval
   }
   
   .container > div {
-    flex: 1 1 calc(33.333% - 32px); /* 3 per row, minus gap */
+    flex: 1 1 calc(50% - 32px); /* 3 per row, minus gap */
     box-sizing: border-box;
     min-width: 0;
     margin-bottom: 32px;
@@ -213,9 +213,13 @@ input, select {
     display: flex;
     flex-direction: column;
 
-    div {
-      max-width: 250px;
-    }
+  }
+
+  .container > div {
+    flex: 1 1 calc(50% - 32px); /* 3 per row, minus gap */
+    box-sizing: border-box;
+    min-width: 0;
+    margin-bottom: 32px;
   }
   
   #info h2:first-child {

@@ -10,6 +10,7 @@ const projects = ref(projs.projects.proj);
       <img :src="project.image" :alt="project.title" class="project-img" />
       <h3>{{ project.title }}</h3>
       <p>{{ project.description }}</p>
+      <a :href="project.url" target="_blank" class="text-cyan-400 hover:underline">View Project</a>
     </div>
   </div>
 </template>

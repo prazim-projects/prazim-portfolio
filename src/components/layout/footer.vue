@@ -41,8 +41,8 @@ const socials = reactive({
           <h6 class="text-uppercase fw-bold">Contact</h6>
           <hr class="divider"/>
           <p><i class="fas fa-home mr-3"></i> Adama Nazreth Ethiopia</p>
-          <p><i class="fas fa-envelope mr-3"></i> managervonxlique2gmail.com</p>
-          <p><i class="fas fa-phone mr-3"></i> +251 938088610</p>
+          <p><i class="fas fa-envelope mr-3"></i> prasimcontact@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i><a href="https://t.me/earphonesplugd"> Telegram</a> </p>
         </div>
       </div>
     </div>

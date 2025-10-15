@@ -54,6 +54,7 @@ const intern = ref(about.about.Internship)
   gap: 2rem;
   padding: 2rem;
 }
+
 .milestone, .intern {
   flex: 0 0 300px;
   background: rgba(0,0,0,0.12);
@@ -72,7 +73,7 @@ const intern = ref(about.about.Internship)
   max-height: 450px;
   background: rgba(0,0,0,0.25);
 }
-.milestone-img, .intern-img {
+.milestone-img {
   width: 100%;
   margin-top: 1rem;
   border-radius: 0.5rem;
