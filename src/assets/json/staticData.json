@@ -37,8 +37,8 @@
         { "title": "University", "text": "BSc in Software Engineering, focused on web/mobile app development and cybersecurity.", "year": "2019–2026", "img": "/svgs/university.jpg" }
       ],
       "CTF": [
-        { "title": "CTF Achievements", "text": "Won PICOCTF number one in Ethiopia with my team, picoCTF 2025.", "year": "2025", "img": "/svgs/team_okiru.jpg" },
-        { "title": "CTF Achievements", "text": "Team Okiru placed 3rd at Ethio-Cybershield red-team blue-team ctf, a two day event.", "year": "2025", "img": "/svgs/pico.jpg" }
+        { "title": "CTF Achievements", "text": "Won PICOCTF number one in Ethiopia with my team, picoCTF 2025.", "year": "2025", "img": "/svgs/pico.jpg" },
+        { "title": "CTF Achievements", "text": "Team Okiru placed 3rd at Ethio-Cybershield red-team blue-team ctf, a two day event.", "year": "2025", "img": "/svgs/team_okiru.jpg" }
       ],
       "Internship": [
         { "title": "Internship", "text": "First job as a backend developer at ZSECured Tech.", "year": "2025", "img": "/svgs/project.jpg" },
