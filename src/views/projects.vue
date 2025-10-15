@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import projs from '../../assets/json/staticData.json'
+import projs from '../assets/json/staticData.json'
 const projects = ref(projs.projects.proj);
 </script>
 

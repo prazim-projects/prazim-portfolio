@@ -2,10 +2,8 @@
 import { ref } from 'vue';
 import staticData from '../../assets/json/staticData.json'
 
+
 const navs = ref(staticData.navbar.links)
-// const navs = ref({
-//   about:'About Me', contact: 'Contact Me', certs: 'Certificates', stack: 'Stacks', projs: 'projects'
-//   })
 
 </script>
 
@@ -19,8 +17,9 @@ const navs = ref(staticData.navbar.links)
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item" v-for="(value, key) in navs">
-                      <a class="nav-link" aria-current="page" :href="'#'+value.path" >{{value.label}}</a> 
+                     <a class="nav-link" aria-current="page" :href="'#'+value.path" >{{value.label}}</a>                 
                   </li>
+
                 </ul>
               </div>
             </div>

@@ -1,7 +1,7 @@
 <script setup>
 import navbar from './components/layout/navbar.vue'
 // import { RouterLink, RouterView } from 'vue-router'
-import content from './components/layout/content.vue'
+import content from './views//content.vue'
 import Footer from './components/layout/footer.vue'
 
 const foot = Footer

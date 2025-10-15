@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import about from '../../assets/json/staticData.json'
+import about from '../assets/json/staticData.json'
 
 const hoveredIndex = ref(null);
 

@@ -1,6 +1,6 @@
 <script lang="js" setup>
 import { ref } from 'vue';
-import stackList from '../../assets/json/staticData.json'
+import stackList from '../assets/json/staticData.json'
 
 
 const secTools = [

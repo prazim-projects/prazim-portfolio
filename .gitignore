@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 #static files
-/src/assets/json/staticData.json
+# /src/assets/json/staticData.json
 
 
 
