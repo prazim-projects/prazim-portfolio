@@ -12,40 +12,40 @@
 
   "offers": {
     "stack": [
-        {   "category": "Backend-web Dev", "title": "DRF API", "img": "src/assets/django-svg.svg", "desc": "REST APIs and Django templates" },
-        {   "category": "Backend-web Dev", "title": "GraphQL API", "img": "src/assets/GraphQL.svg", "desc": "GraphQL API with Django and apollo client" },
-        {   "category": "Front-end Web dev", "title": "Vue3 UI", "img": "src/assets/vue3.jpg", "desc": "Elegant UI with Vue3" },
-        {   "category": "Fullstack development", "title": "Fullstack App", "img": "src/assets/Bootstrap_logo.svg", "desc": "Bootstrap css framework" },
-        {   "category": "Fullstack development", "title": "Mobile App", "img": "src/assets/Nuxt JS.svg", "desc": "Nuxt js for server side rendering" },
-        {   "category": "Fullstack development", "title": "PWA", "img": "src/assets/ionic.svg", "desc": "Progressive Web App with ionic framework, vue and capacitor" },
-        {   "category": "Telegram Bot Developer", "title": "Telegram Bot", "img": "src/assets/ptb-Logo.svg", "desc": "Python Telegram bot for business automation" },
-        {   "category": "Database Design and Admin", "title": "MYSQL DBMS", "img": "src/assets/mysql-logo.svg", "desc": "Database Management with MYSQL" }
+        {   "category": "Backend-web Dev", "title": "DRF API", "img": "/svgs/django-svg.svg", "desc": "REST APIs and Django templates" },
+        {   "category": "Backend-web Dev", "title": "GraphQL API", "img": "/svgs/GraphQL.svg", "desc": "GraphQL API with Django and apollo client" },
+        {   "category": "Front-end Web dev", "title": "Vue3 UI", "img": "/svgs/vue3.jpg", "desc": "Elegant UI with Vue3" },
+        {   "category": "Fullstack development", "title": "Fullstack App", "img": "/svgs/Bootstrap_logo.svg", "desc": "Bootstrap css framework" },
+        {   "category": "Fullstack development", "title": "Mobile App", "img": "/svgs/Nuxt JS.svg", "desc": "Nuxt js for server side rendering" },
+        {   "category": "Fullstack development", "title": "PWA", "img": "/svgs/Ionic.svg", "desc": "Progressive Web App with ionic framework, vue and capacitor" },
+        {   "category": "Telegram Bot Developer", "title": "Telegram Bot", "img": "/svgs/ptb-logo.svg", "desc": "Python Telegram bot for business automation" },
+        {   "category": "Database Design and Admin", "title": "MYSQL DBMS", "img": "/svgs/mysql-logo.svg", "desc": "Database Management with MYSQL" }
     ]
     },
   
     "projects" : {
       "proj" :  [   
-        {   "title": "Affiliate marketing web app", "stack": "DRF API", "image": "/src/assets/drf.png", "description": "REST APIs and Django templates", "url": "https://github.com/prazim-projects/affiliate-marketing-website" },
-        {   "title": "Vue3 Portfolio site", "stack": "Vue3, TailwindCSS",  "image": "/src/assets/vue.svg", "description": "Elegant UI with Vue3&Tailwindcss", "url": "https://github.com/prasimbaal/vue-portfolio" },
-        {   "title": "Exam Bank", "stack": "Nuxt 4, Django, GraphQL", "image": "/src/assets/web_hacking_2024.png", "description": "Role based Auth for an Exam archive", "url": "https://github.com/prazim-projects/exam-bank" }
+        {   "title": "Affiliate marketing web app", "stack": "DRF API", "image": "/svgs/drf.png", "description": "REST APIs and Django templates", "url": "https://github.com/prazim-projects/affiliate-marketing-website" },
+        {   "title": "Vue3 Portfolio site", "stack": "Vue3, TailwindCSS",  "image": "/svgs/vue.svg", "description": "Elegant UI with Vue3&Tailwindcss", "url": "https://github.com/prasimbaal/vue-portfolio" },
+        {   "title": "Exam Bank", "stack": "Nuxt 4, Django, GraphQL", "image": "/svgs/web_hacking_2024.png", "description": "Role based Auth for an Exam archive", "url": "https://github.com/prazim-projects/exam-bank" }
         ] 
     },
 
     "about": {
       "education": [
-        { "title": "High School", "text": "At SOS Herman Gmeiner first started exploring programming and Linux.", "year": "2016–2019", "img": "../../src/assets/sos.png" },
-        { "title": "University", "text": "BSc in Software Engineering, focused on web/mobile app development and cybersecurity.", "year": "2019–2026", "img": "/src/assets/university.jpg" }
+        { "title": "High School", "text": "At SOS Herman Gmeiner first started exploring programming and Linux.", "year": "2016–2019", "img": "/svgs/sos.png" },
+        { "title": "University", "text": "BSc in Software Engineering, focused on web/mobile app development and cybersecurity.", "year": "2019–2026", "img": "/svgs/university.jpg" }
       ],
       "CTF": [
-        { "title": "CTF Achievements", "text": "Won PICOCTF number one in Ethiopia with my team, picoCTF 2025.", "year": "2025", "img": "../../src/assets/team_okiru.jpg" },
-        { "title": "CTF Achievements", "text": "Team Okiru placed 3rd at Ethio-Cybershield red-team blue-team ctf, a two day event.", "year": "2025", "img": "../../src/assets/pico.jpg" }
+        { "title": "CTF Achievements", "text": "Won PICOCTF number one in Ethiopia with my team, picoCTF 2025.", "year": "2025", "img": "/svgs/team_okiru.jpg" },
+        { "title": "CTF Achievements", "text": "Team Okiru placed 3rd at Ethio-Cybershield red-team blue-team ctf, a two day event.", "year": "2025", "img": "/svgs/pico.jpg" }
       ],
       "Internship": [
-        { "title": "Internship", "text": "First job as a backend developer at ZSECured Tech.", "year": "2025", "img": "/src/assets/project.jpg" },
-        { "title": "Internship", "text": "Created a digital exam archive system for the Ethiopian Defense university.(Confidential!) 🇪🇹", "year": "2025", "img": "/src/assets/project.jpg" }
+        { "title": "Internship", "text": "First job as a backend developer at ZSECured Tech.", "year": "2025", "img": "/svgs/project.jpg" },
+        { "title": "Internship", "text": "Created a digital exam archive system for the Ethiopian Defense university.(Confidential!) 🇪🇹", "year": "2025", "img": "/svgs/project.jpg" }
       ],
       "misc": [
-        { "title": "Travelling Hobby", "text": "I Explore Ethiopia and neighboring countries, combining travel with tech meetups and cultural experiences.", "year": "Ongoing", "img": "/src/assets/travel.jpg" },
+        { "title": "Travelling Hobby", "text": "I Explore Ethiopia and neighboring countries, combining travel with tech meetups and cultural experiences.", "year": "Ongoing", "img": "/svgs/travel.jpg" },
         { "title": "Future", "text": "Aiming to pursue a master’s in Cybersecurity and work internationally.", "year": "2026+" }
       ]
     }

@@ -4,8 +4,8 @@ import stackList from '../assets/json/staticData.json'
 
 
 const secTools = [
-    {category: 'Network Security', img: 'src/assets/Nmap Project.png'},
-    {category: 'Web security', img: 'src/assets/burpsuite-security.svg'}
+    {category: 'Network Security', img: 'svgs/Nmap Project.png'},
+    {category: 'Web security', img: 'svgs/burpsuite-security.svg'}
 ]
 
 const frameworks = ref(stackList.offers.stack)
