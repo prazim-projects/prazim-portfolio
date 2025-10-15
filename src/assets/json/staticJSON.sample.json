@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "links": [
+      { "label": "Home", "path": "" },
+      { "label": "Skills", "path": "skills" },
+      { "label": "Projects", "path": "projects" },
+      { "label": "About Me", "path": "about" },
+      { "label": "Contact Me", "path": "contact" }
+    ]
+  },
+
+  "offers": {
+    "stack": [
+      { "category": "Backend-web Dev", "title": "API Service", "img": "/src/assets/dummy1.svg", "desc": "Generic backend API service" },
+      { "category": "Backend-web Dev", "title": "Data Processor", "img": "/src/assets/dummy2.svg", "desc": "Processes data efficiently" },
+      { "category": "Front-end Web dev", "title": "UI Kit", "img": "/src/assets/dummy3.jpg", "desc": "Reusable UI components" },
+      { "category": "Fullstack development", "title": "Web App", "img": "/src/assets/dummy4.svg", "desc": "Fullstack web application" },
+      { "category": "Fullstack development", "title": "Mobile App", "img": "/src/assets/dummy5.svg", "desc": "Cross-platform mobile app" },
+      { "category": "Fullstack development", "title": "PWA", "img": "/src/assets/dummy6.svg", "desc": "Progressive Web App example" },
+      { "category": "Telegram Bot Dev", "title": "Chat Bot", "img": "/src/assets/dummy7.svg", "desc": "Automated Telegram chat bot" }
+    ]
+  },
+
+  "projects": {
+    "proj": [
+      { "title": "Marketing Platform", "stack": "API Service", "image": "/src/assets/dummy1.png", "description": "A platform for marketing automation", "url": "https://example.com/project1" },
+      { "title": "Portfolio Demo", "stack": "UI Kit", "image": "/src/assets/dummy2.png", "description": "Personal portfolio demo site", "url": "https://example.com/project2" },
+      { "title": "Exam Archive", "stack": "Web App", "image": "/src/assets/dummy3.png", "description": "Archive for exam documents", "url": "https://example.com/project3" }
+    ]
+  },
+
+  "about": {
+    "education": [
+      { "title": "High School", "text": "Started learning programming basics.", "year": "2010–2013", "img": "/src/assets/dummy_school.png" },
+      { "title": "University", "text": "Studied Computer Science.", "year": "2014–2018", "img": "/src/assets/dummy_university.jpg" }
+    ],
+    "CTF": [
+      { "title": "CTF Winner", "text": "Won first place in DummyCTF.", "year": "2019", "img": "/src/assets/dummy_ctf1.jpg" },
+      { "title": "CTF Finalist", "text": "Finalist in DummyCTF regional event.", "year": "2020", "img": "/src/assets/dummy_ctf2.jpg" }
+    ],
+    "Internship": [
+      { "title": "Internship", "text": "Interned at DummyTech as backend developer.", "year": "2021", "img": "/src/assets/dummy_intern1.jpg" },
+      { "title": "Internship", "text": "Worked on confidential DummyProject.", "year": "2022", "img": "/src/assets/dummy_intern2.jpg" }
+    ],
+    "misc": [
+      { "title": "Travelling Hobby", "text": "Travelled to various countries and attended tech meetups.", "year": "Ongoing", "img": "/src/assets/dummy_travel.jpg" },
+      { "title": "Future", "text": "Plans to pursue a master’s degree and work abroad.", "year": "2025+" }
+    ]
+  }
+}

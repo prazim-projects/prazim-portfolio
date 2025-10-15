@@ -1,0 +1,59 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+/* Stack Carousel Styling */
+#stack {
+  margin-top: 30px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust as needed */
+  object-fit: contain;
+
+}
+
+/* Responsive adjustments for smaller screens */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+ 
+p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: burlywood;
+ }
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
