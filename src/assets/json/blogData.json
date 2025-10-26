@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+    "title": "TRYHACKME: Pyrat Write-Up",
+    "slug": "thm-pyrat",
+    "excerpt": "A beginner-friendly walkthrough of the pyrat machine on TryHackMe.",
+    "tags": ["CTF", "Linux", "Web Exploitation"],
+    "image": "/images/pyrat.png"
+  }
+]
+}

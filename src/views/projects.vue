@@ -5,6 +5,7 @@ const projects = ref(projs.projects.proj);
 </script>
 
 <template>
+  <h2 class="slide-title" id="projects"> Projects </h2>
   <div class="projects-grid" >
     <div v-for="project in projects" :key="project.title" class="project-card">
       <img :src="project.image" :alt="project.title" class="project-img" />
@@ -16,6 +17,15 @@ const projects = ref(projs.projects.proj);
 </template>
 
 <style scoped>
+h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 2.5rem;
+}
+
+
 .projects-grid {
   display: flex;
   flex-wrap: wrap;

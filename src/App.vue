@@ -1,61 +1,51 @@
 <script setup>
-import navbar from './components/layout/navbar.vue'
-// import { RouterLink, RouterView } from 'vue-router'
-import content from './views//content.vue'
+import Navbar from './components/layout/navbar.vue'
+import { RouterView } from 'vue-router'
 import Footer from './components/layout/footer.vue'
-
-const foot = Footer
-
-
-
 </script>
 
 <template>
   <div class="app-wrapper">
     <header>
-      <navbar />
+      <Navbar />
     </header>
-    
+
     <main class="main-content">
-      <div>
-        <content />
-      </div>    
+      <RouterView />
     </main>
 
     <Footer class="footer" />
   </div>
-
-
-  <!-- <router-view /> -->
 </template>
 
 <style scoped>
-
 .app-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* Navbar now sticky instead of fixed */
 header {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+  position: sticky;
   top: 0;
+  z-index: 999;
 }
 
+/* No more need for large margin-top */
 .main-content {
   flex: 1 0 auto;
-  margin-top: 100px;
   width: 100%;
-  padding-bottom: 0.5rem; }
-
-
-@media (max-width: 768px) {
-  .main-content {
-    margin-top: 80px;
-  }
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
+
+
+.navbar {
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+}
+
 </style>

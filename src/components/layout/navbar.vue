@@ -10,14 +10,16 @@ const navs = ref(staticData.navbar.links)
 <template>
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><em>Beal</em></a>
+              <!-- <a class="navbar-brand" href="#"><em>Beal</em></a> -->
+              <router-link class="navbar-brand" to="/"><em>Beal</em></router-link>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon bg-white"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item" v-for="(value, key) in navs">
-                     <a class="nav-link" aria-current="page" :href="'#'+value.path" >{{value.label}}</a>                 
+                     <!-- <a class="nav-link" aria-current="page" :href="'#'+value.path" >{{value.label}}</a>                  -->
+                    <router-link class="nav-link" :to="value.path" >{{value.label}}</router-link>
                   </li>
 
                 </ul>

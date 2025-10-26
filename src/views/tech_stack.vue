@@ -4,15 +4,17 @@ import stackList from '../assets/json/staticData.json'
 
 
 const secTools = [
-    {category: 'Network Security', img: 'svgs/Nmap Project.png'},
-    {category: 'Web security', img: 'svgs/burpsuite-security.svg'}
+    {category: 'Network Security & pentest with NMAP', img: 'svgs/Nmap Project.png'},
+    {category: 'Web application security with burp suite', img: 'svgs/burpsuite-security.svg'}
 ]
 
 const frameworks = ref(stackList.offers.stack)
 </script>
 
 <template>
+<h2 class="slide-title" id="skills">Skills & Tools</h2>
 <div class="container-sk">
+
     <div id="stack">
         <div class="h-2" v-for="(value, key) in frameworks" :key="key">    
             <img :src="value.img" :alt="value.desc"></img>
@@ -29,6 +31,15 @@ const frameworks = ref(stackList.offers.stack)
 </template>
 
 <style lang="css" scoped>
+h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 2.5rem;
+}
+
+
 .container-sk{
     display: flex;
     flex-direction: row;

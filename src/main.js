@@ -1,14 +1,11 @@
 import { createApp } from 'vue'
 import './style.css'
-import primeVue from 'primevue/config';
 import App from './App.vue'
-// import Aura from '@primeuix/themes/aura'
-import carousel from 'primevue/carousel' 
-// import router from './router/'
 
 import "bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import router from './router';
 
 // .use(router)
-const app = createApp(App)
+const app = createApp(App).use(router)
 app.mount('#app')

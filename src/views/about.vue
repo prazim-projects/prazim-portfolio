@@ -1,140 +1,200 @@
 <script setup>
 import { ref } from 'vue';
-import about from '../assets/json/staticData.json'
+import about from '../assets/json/staticData.json';
 
 const hoveredIndex = ref(null);
 
-const ctf = ref(about.about.CTF)
-const edu = ref(about.about.education)
-const misc = ref(about.about.misc)
-const intern = ref(about.about.Internship)
-
+const ctf = ref(about.about.CTF);
+const edu = ref(about.about.education);
+const intern = ref(about.about.Internship);
 </script>
 
-
 <template>
-  <section class="timeline">
-    <div class="roadmap">
-      <div
-        class="milestone"
-        v-for="(s, i) in edu"
-        :key="i"
-        @mouseenter="hoveredIndex = i"
-        @mouseleave="hoveredIndex = null"
-        :class="{ expanded: hoveredIndex === i }"
-      >
-        <h3>{{ s.title }}</h3>
-        <p>{{ s.text }}</p>
-        <span>{{ s.year }}</span>
-        <img v-if="hoveredIndex === i && s.img" :src="s.img" class="milestone-img" />
-      </div>
-
-      <div class="ctf"
-         v-for="(s, i) in ctf"
-        :key="i"
-        @mouseenter="hoveredIndex = i"
-        @mouseleave="hoveredIndex = null"
-        :class="{ expanded: hoveredIndex === i }"
-        >
-          <h3>{{ s.title }}</h3>
-          <p>{{ s.text }}</p>
-          <span>{{ s.year }}</span>
-          <img v-if="hoveredIndex === i && s.img" :src="s.img" class="milestone-img" />
-      </div>
-
-      <div class="intern"
-         v-for="(s, i) in intern"
-        :key="i"
-        @mouseenter="hoveredIndex = i"
-        @mouseleave="hoveredIndex = null"
-        :class="{ expanded: hoveredIndex === i }"
-        >
-          <h3>{{ s.title }}</h3>
-          <p>{{ s.text }}</p>
-          <span>{{ s.year }}</span>
-          <img v-if="hoveredIndex === i && s.img" :src="s.img" class="milestone-img" />
-      </div>
-
+  <h2 id="about">Career, Achievements, & Hobbies</h2>
+ <div class="roadmap">
+     <div
+      class="card neon"
+      v-for="(s, i) in edu"
+      :key="'edu-' + i"
+      @mouseenter="hoveredIndex = 'edu-' + i"
+      @mouseleave="hoveredIndex = null"
+      :class="{ expanded: hoveredIndex === 'edu-' + i }"
+    >
+      <h3 class="glow-text">{{ s.title }}</h3>
+      <p>{{ s.text }}</p>
+      <span>{{ s.year }}</span>
+      <transition name="fade-slide">
+        <img v-if="hoveredIndex === 'edu-' + i && s.img" :src="s.img" class="card-img" />
+      </transition>
     </div>
-  </section>
+
+    <!-- CTF -->
+    <div
+      class="card neon"
+      v-for="(s, i) in ctf"
+      :key="'ctf-' + i"
+      @mouseenter="hoveredIndex = 'ctf-' + i"
+      @mouseleave="hoveredIndex = null"
+      :class="{ expanded: hoveredIndex === 'ctf-' + i }"
+    >
+      <h3 class="glow-text pink">{{ s.title }}</h3>
+      <p>{{ s.text }}</p>
+      <span>{{ s.year }}</span>
+      <transition name="fade-slide">
+        <img v-if="hoveredIndex === 'ctf-' + i && s.img" :src="s.img" class="card-img" />
+      </transition>
+    </div>
+
+    <!-- Internship -->
+    <div
+      class="card neon"
+      v-for="(s, i) in intern"
+      :key="'intern-' + i"
+      @mouseenter="hoveredIndex = 'intern-' + i"
+      @mouseleave="hoveredIndex = null"
+      :class="{ expanded: hoveredIndex === 'intern-' + i }"
+    >
+      <h3 class="glow-text cyan">{{ s.title }}</h3>
+      <p>{{ s.text }}</p>
+      <span>{{ s.year }}</span>
+      <transition name="fade-slide">
+        <img v-if="hoveredIndex === 'intern-' + i && s.img" :src="s.img" class="card-img" />
+      </transition>
+    </div>
+  </div>
 </template>
 
 <style scoped>
+/* Layout */
 .roadmap {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
-  justify-content: flex-start;
+  justify-content: center;
+  background: radial-gradient(circle at top, #04080f, #000);
+  overflow: hidden;
 }
 
-.milestone, .intern, .ctf {
-  flex: 0 0 23%;
-  background: rgba(0,0,0,0.12);
+h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 2.5rem;
+}
+
+
+.card {
+  flex: 1 1 calc(25% - 2rem);
+  background: rgba(0, 5, 10, 0.7);
   color: #fff;
-  border: 2px solid #00ffff;
+  border: 1px solid rgba(0, 255, 255, 0.3);
   border-radius: 1rem;
-  padding: 1rem;
-  transition: transform 0.4s, max-height 0.4s;
-  cursor: pointer;
-  max-height: 200px;
-  max-width: 23%;
-  overflow: hidden;
+  padding: 1.2rem;
   position: relative;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
 }
-.milestone.expanded, .intern.expanded, .ctf.expanded {
-  max-height: 400px;
-  background: rgba(0,0,0,0.25);
+
+/* Neon glow ring */
+.neon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff) border-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  opacity: 0.3;
+  filter: blur(3px);
+  transition: opacity 0.4s;
 }
-.milestone-img {
+
+/* Hover expand with glow pulse */
+.card.expanded {
+  transform: translateY(-8px);
+  border-color: #0ff;
+  box-shadow: 0 0 20px #00ffff99, inset 0 0 15px #00ffff33;
+}
+
+.card.expanded::before {
+  opacity: 1;
+  animation: pulse 1.5s infinite alternate;
+}
+
+/* Flicker effect */
+@keyframes pulse {
+  0%, 100% { filter: blur(2px) brightness(1.2); }
+  50% { filter: blur(3px) brightness(1.6); }
+}
+
+/* Glowing text */
+.glow-text {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 15px #00ffff, 0 0 25px #00ffff;
+  letter-spacing: 0.05em;
+  transition: text-shadow 0.3s ease;
+}
+
+.glow-text.pink {
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff, 0 0 25px #ff00ff;
+}
+
+.glow-text.cyan {
+  color: #00ffff;
+}
+
+/* Flickering glitch animation */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+  }
+}
+
+.card.expanded h3 {
+  animation: flicker 2s infinite;
+}
+
+/* Image reveal animation */
+.card-img {
   width: 100%;
   margin-top: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0,255,255,0.2);
-}
-.milestone:hover, .intern:hover, .ctf:hover {
-  transform: translateY(-10px);
+  box-shadow: 0 2px 12px rgba(0, 255, 255, 0.5);
 }
 
-@media (max-width: 780) {
-  .roadmap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
-  justify-content: flex-start;
+/* Transition animation for fade-slide */
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.4s ease;
 }
 
-.milestone, .intern, .ctf {
-  flex: 0 0 50%;
-  background: rgba(0,0,0,0.12);
-  color: #fff;
-  border: 2px solid #00ffff;
-  border-radius: 1rem;
-  padding: 1rem;
-  transition: transform 0.4s, max-height 0.4s;
-  cursor: pointer;
-  max-height: 500px;
-  max-width: 23%;
-  overflow: hidden;
-  position: relative;
-  box-sizing: border-box;
+.fade-slide-enter-from,
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
 }
-.milestone.expanded, .intern.expanded, .ctf.expanded {
-  max-height: 500px;
-  max-width: 50%;
-  background: rgba(0,0,0,0.25);
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
 }
-.milestone-img {
-  width: 100%;
-  margin-top: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0,255,255,0.2);
-}
-.milestone:hover, .intern:hover, .ctf:hover {
-  transform: translateY(-10px);
-}
-  
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
 }
 </style>
