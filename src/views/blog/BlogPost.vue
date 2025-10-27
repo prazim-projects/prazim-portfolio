@@ -10,7 +10,7 @@ const slug = route.params.slug;
 const content = ref("Loading...");
 
 //  import markdown posts
-const posts = import.meta.glob("@/assets/posts/*.md", { as: "raw", eager: true });
+const posts = import.meta.glob("/src/assets/posts/*.md", { as: "raw", eager: true });
 
 onMounted(() => {
   const path = `/src/assets/posts/${slug}.md`;

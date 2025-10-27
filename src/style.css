@@ -21,7 +21,6 @@ body {
 
 
 .carousel-item img {
-  width: 100%;
   height: auto;
   max-height: 200px; /* Adjust as needed */
   object-fit: contain;

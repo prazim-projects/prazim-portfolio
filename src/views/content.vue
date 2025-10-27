@@ -46,13 +46,9 @@ onMounted(() => startRotation(2000)) // 2s interval
   </div>
       <!-- Middle -->
   <div class="text-center h-64 " id="middle">
-    <div class="glitch" :style="`--glitch-img: url(${myImage})`">
-      <img src="/src/assets/me.jpg" height="350px" width="250px" class="rounded rounded-full w-5 h-10" alt="Profile Image"></img>
+    <div class="glitch bg-red-500" >
+      <img src="/src/assets/me.jpg" class="rounded-50 object-cover" alt="Profile Image"></img>
     </div>
-      <div class="mt-4 flex gap-4">
-        <a href="#projects" class="px-4 py-2 bg-cyan-600 hover:bg-cyan-700 rounded-lg text-white">View Projects</a>
-        <a href="#contact" class="px-4 py-2 border border-cyan-500 hover:bg-cyan-600 rounded-lg text-white">Contact Me</a>
-      </div>
   </div>
 
       <!-- Right -->
@@ -66,6 +62,21 @@ onMounted(() => startRotation(2000)) // 2s interval
 
 
 <style scoped>
+.glitch {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+img{
+  width: 100%;
+  height: 100%;
+
+}
 
 .container {
   padding-top: 50px;
@@ -82,12 +93,6 @@ onMounted(() => startRotation(2000)) // 2s interval
   min-width: 300px;
 }
  
-/* --------- Hover effects --------- */
-.img-fluid {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.img-fluid:hover { transform: scale(1.02); }
 
 .btn {
   padding: 0.5rem 1.5rem;
