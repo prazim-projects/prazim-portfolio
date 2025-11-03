@@ -12,6 +12,7 @@
     "@popperjs/core": "^2.11.8",
     "@primeuix/themes": "^1.1.2",
     "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "bootstrap": "^5.3.3",
     "coreui": "^0.1.0",
     "jquery": "^3.7.1",
