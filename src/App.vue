@@ -3,7 +3,7 @@ import Navbar from './components/layout/navbar.vue'
 import { RouterView } from 'vue-router'
 import Footer from './components/layout/footer.vue'
 import { Analytics } from '@vercel/analytics/vue';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/vue"
 
 </script>
 
