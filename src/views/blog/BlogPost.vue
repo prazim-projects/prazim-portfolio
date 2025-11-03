@@ -40,7 +40,7 @@ function goBack() {
 .blog-post {
   margin: 5px;
   padding: 4.5rem 3rem;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   color: #e0faff;
   background: radial-gradient(circle at top, #05080f, #000);
@@ -64,6 +64,7 @@ function goBack() {
 .post-content h1, h2, h3 {
   color: #0ff;
   text-shadow: 0 0 12px #0ff, 0 0 20px #ff00ff55;
+  width: fit-content;
 }
 .post-content pre {
   background: #011;
@@ -74,5 +75,16 @@ function goBack() {
 }
 .post-content code {
   color: #0ff;
+}
+
+
+
+@media (max-width: 576px) {
+  #info h2:first-child { font-size: 1.8rem; }
+  .img{ max-width: 220px; }
+}
+
+footer{
+  width: 100%;
 }
 </style>

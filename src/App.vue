@@ -2,9 +2,12 @@
 import Navbar from './components/layout/navbar.vue'
 import { RouterView } from 'vue-router'
 import Footer from './components/layout/footer.vue'
+import { Analytics } from '@vercel/analytics/vue';
+
 </script>
 
 <template>
+  <Analytics />
   <div class="app-wrapper">
     <header>
       <Navbar />
