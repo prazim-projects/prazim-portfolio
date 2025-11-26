@@ -16,9 +16,9 @@ const frameworks = ref(stackList.offers.stack)
 <div class="container-sk">
 
     <div id="stack">
-        <div class="h-2" v-for="(value, key) in frameworks" :key="key">    
+        <div v-for="(value, key) in frameworks" :key="key" class="stack-item">    
             <img :src="value.img" :alt="value.desc"></img>
-            <p class="text-light text-center">{{value.desc}}</p>
+            <p class="text-light text-start m-4">{{value.desc}}</p>
         </div>  
     </div>
     <div class="secTools">
@@ -34,17 +34,19 @@ const frameworks = ref(stackList.offers.stack)
 h2 {
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   color: white;
   font-size: 2.5rem;
 }
 
-
+.stack-item{
+  margin: 10px;
+}
 .container-sk{
     display: flex;
     flex-direction: row;
     min-height: 200px;    /* set your desired minimum height */
-    width: 100%;
+    width: fit-content;
     box-sizing: border-box;
     padding-top: 10px;
 }
@@ -53,32 +55,36 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px 0px;
+    margin-left: 10px;
     flex-wrap: wrap;
     
     :hover{
       transform: scale(1.1);
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      box-shadow: 0 1px 10px rgba(0, 255, 255, 0.5);
     }
 
   }
 
 .secTools{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
     
     :hover{
-      transform: scale(1.1);
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      transform: scale(1.03);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
     }
     
     img{
         height: 200px;
-        width: 200px;
+        width: 150px;
     }
   } 
+
+.secTools div {
+  text-align: center;
+}
+
 
 #stack > div{
     flex: 1 ;
@@ -87,9 +93,6 @@ h2 {
         width: 200px;
 
     }
-
-
-    
   }
 
   @media (max-width: 780px){
@@ -99,7 +102,7 @@ h2 {
       align-items: center;
     }
 
-    .sectools{
+    /* .sectools{
       width: 200px;
       display: flex;
       flex-direction: column;
@@ -116,7 +119,7 @@ h2 {
         width: 200px;
       }
  
-    }
+    } */
   }
 
 </style>

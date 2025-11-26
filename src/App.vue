@@ -10,7 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/vue"
 <template>
   <Analytics />
   <SpeedInsights />
-  <div class="app-wrapper">
+  <div class="app-wrapper" id="top">
     <header>
       <Navbar />
     </header>

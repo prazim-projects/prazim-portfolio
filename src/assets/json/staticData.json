@@ -30,14 +30,14 @@
         {   "title": "Affiliate marketing web app", "stack": "DRF API", "image": "/svgs/drf.png", "description": "REST APIs and Django templates", "url": "https://github.com/prazim-projects/affiliate-marketing-website" },
         {   "title": "ASTU Guest Route Planning Guide\na Software Architecture Case Study", "stack": "Software Architecture and Requirements Engineering", "image": "/svgs/req_eng.jpg", "description": "Software Architecture and Requirements Engineering", "url": "https://www.scribd.com/document/812996900/Project-proposal" },
         {   "title": "This Portfolio site", "stack": "Vue3, TailwindCSS",  "image": "/svgs/vue.svg", "description": "Portfolio website made with Vue3&Tailwindcss", "url": "https://github.com/prazim-projects/prazim-portfolio" },
-        {   "title": "Exam Bank", "stack": "Nuxt 4, Django, GraphQL", "image": "/svgs/web_hacking_2024.png", "description": "Role based Auth system for an Exam archive", "url": "https://github.com/prazim-projects/exam-bank" }
+        {   "title": "Vunlerable GraphQL", "stack": "Django, GraphQL API, Django Templates", "image": "/svgs/vulnGraphql.svg", "description": "An intentionally vulnerable Django + GraphQL application used for ethical hacking practice and CTF-style API security testing, featuring a minimal blog interface.", "url": "https://leab.pythonanywhere.com/" }
         ] 
     },
 
     "about": {
       "education": [
         { "title": "High School", "text": "At SOS Herman Gmeiner first started exploring programming and Linux.", "year": "2016–2019", "img": "/svgs/sos.png" },
-        { "title": "University", "text": "BSc in Software Engineering, focused on web/mobile app development and cybersecurity.", "year": "2021–2026", "img": "/svgs/university.jpg" }
+        { "title": "University", "text": "BSc in Software Engineering, focused on web/mobile app development and cybersecurity.", "year": "2021–2026", "img": "/svgs/csec_astu.png" }
       ],
       "CTF": [
         { "title": "CTF Achievements", "text": "Won PICOCTF number one in Ethiopia with my team, picoCTF 2025.", "year": "2025", "img": "/svgs/pico.jpg" },

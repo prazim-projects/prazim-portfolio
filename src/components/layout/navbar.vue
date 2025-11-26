@@ -29,14 +29,17 @@ const navs = ref(staticData.navbar.links)
 </template>
 
 <style lang="css" scoped>
-  li a{
-      color: aliceblue;
-     }
-  em{
-    color: bisque;
-  }
+li a{
+  color: aliceblue;
+}
 
-  .navbar{
-    margin-bottom: 10px;
-  }
+em{
+  color: bisque;
+}
+
+.navbar{
+  margin-bottom: 20px;
+  padding: 10px;
+
+}
 </style>

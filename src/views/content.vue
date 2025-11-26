@@ -3,7 +3,7 @@ import { onUnmounted, ref, onMounted } from 'vue';
 import tech_stack from './tech_stack.vue';
 import Projects from './projects.vue';
 import About from './about.vue';
-import myImage from '../assets/me.jpg';
+import blog from '@/views/blog/blog.vue';
 
 const greetings = [
   'Hello there',
@@ -35,8 +35,7 @@ onMounted(() => startRotation(2000)) // 2s interval
 
 <template>
 <div class="container text-light">
-  <!-- Left-->
-  <div >
+  <div id="content">
     <div id="info">
       <h1 class="text-4xl font-bold text-white">
         {{currentGreet}} , Welcome to my page! I am {{ full_name }} a software engineer hailing from the lands of Abyssinia 🇪🇹.</h1>
@@ -51,13 +50,22 @@ onMounted(() => startRotation(2000)) // 2s interval
     </div>
   </div>
 
-      <!-- Right -->
-  <!-- <div class="text-center w-25" >  
-    </div> -->
+
     <tech_stack />
 </div>
 <Projects />
 <About />
+
+<blog />
+
+
+<div class="text-center my-4">
+  <a href="#top">
+    <button class="btn btn-primary bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded">
+      Back to Top
+    </button>
+  </a>
+</div>
 </template>
 
 

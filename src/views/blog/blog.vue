@@ -13,8 +13,7 @@ function openPost(slug) {
 
 <template>
     <div class="blog-list">
-    <h1>My Blog</h1>
-
+    <h3>check out my blog for articles on web development and cybersecurity</h3>
     <div class="post-grid">
       <div v-for="post in posts" :key="post.slug" class="post-card" @click="openPost(post.slug)">
         <h2>{{ post.title }}</h2>

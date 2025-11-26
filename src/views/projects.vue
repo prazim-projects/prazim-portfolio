@@ -32,15 +32,21 @@ h2 {
   gap: 32px;
   justify-content: center;
 }
-.project-card {
-  background: #222;
+
+.project-card {  
   color: #eee;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  /* box-shadow: 0 4px 16px rgba(0,0,0,0.12); */
   padding: 1.5rem;
   width: 300px;
   text-align: center;
   transition: transform 0.2s;
+
+  :hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+
 }
 .project-card:hover {
   transform: translateY(-8px) scale(1.03);
